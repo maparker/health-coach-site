@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Privacy Policy — Health Coach</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #0c0d12;
+    --surface: #14161d;
+    --border: #262a34;
+    --text: #e7e9ef;
+    --muted: #7b8190;
+    --accent: #4ec6e6;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'IBM Plex Sans', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  header {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 20px 48px;
+    border-bottom: 1px solid var(--border);
+    background: var(--surface);
+  }
+  .hc-mark {
+    width: 32px; height: 32px; border-radius: 8px;
+    background: var(--accent);
+    display: flex; align-items: center; justify-content: center;
+    font-family: 'IBM Plex Mono', monospace;
+    font-weight: 700; font-size: 13px; color: var(--bg);
+    flex-shrink: 0;
+  }
+  .wordmark {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 12px; letter-spacing: .18em;
+    text-transform: uppercase; color: var(--text);
+  }
+  nav { margin-left: auto; }
+  nav a {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 11px; letter-spacing: .1em; text-transform: uppercase;
+    color: var(--muted); text-decoration: none;
+    transition: color .15s;
+  }
+  nav a:hover { color: var(--text); }
+
+  main {
+    flex: 1;
+    max-width: 720px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 64px 24px 80px;
+  }
+
+  .page-label {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 11px; letter-spacing: .2em; text-transform: uppercase;
+    color: var(--accent); margin-bottom: 16px;
+  }
+  h1 {
+    font-size: 32px; font-weight: 300;
+    letter-spacing: -.01em; margin-bottom: 8px;
+  }
+  .effective {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 12px; color: var(--muted);
+    margin-bottom: 48px;
+  }
+
+  section { margin-bottom: 40px; }
+  h2 {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 11px; letter-spacing: .16em; text-transform: uppercase;
+    color: var(--accent); font-weight: 500;
+    margin-bottom: 14px;
+  }
+  p {
+    font-size: 15px; font-weight: 300;
+    color: var(--muted); line-height: 1.75;
+    margin-bottom: 12px;
+  }
+  p:last-child { margin-bottom: 0; }
+  ul {
+    margin: 10px 0 12px 0;
+    padding-left: 0;
+    list-style: none;
+  }
+  li {
+    font-size: 15px; font-weight: 300;
+    color: var(--muted); line-height: 1.75;
+    padding-left: 20px;
+    position: relative;
+  }
+  li::before {
+    content: '—';
+    position: absolute; left: 0;
+    color: var(--accent); font-family: 'IBM Plex Mono', monospace;
+  }
+
+  .divider {
+    border: none;
+    border-top: 1px solid var(--border);
+    margin: 40px 0;
+  }
+
+  a { color: var(--accent); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+
+  footer {
+    padding: 24px 48px;
+    border-top: 1px solid var(--border);
+    display: flex; align-items: center; justify-content: space-between;
+    flex-wrap: wrap; gap: 12px;
+  }
+  footer p {
+    font-size: 12px; color: var(--muted);
+    font-family: 'IBM Plex Mono', monospace;
+    margin: 0;
+  }
+  footer a { color: var(--muted); }
+  footer a:hover { color: var(--text); text-decoration: none; }
+
+  @media (max-width: 600px) {
+    header { padding: 16px 20px; }
+    footer { padding: 20px; }
+    main { padding: 40px 20px 60px; }
+    h1 { font-size: 26px; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="hc-mark">HC</div>
+  <span class="wordmark">Health Coach</span>
+  <nav>
+    <a href="index.html">Home</a>
+  </nav>
+</header>
+
+<main>
+  <p class="page-label">Legal</p>
+  <h1>Privacy Policy</h1>
+  <p class="effective">Effective date: June 8, 2026</p>
+
+  <section>
+    <h2>Overview</h2>
+    <p>
+      Health Coach is a personal, self-hosted web application built for private use by its owner.
+      It is not a commercial product and has no public user base. This policy describes how data
+      accessed through Google Health is handled.
+    </p>
+  </section>
+
+  <hr class="divider">
+
+  <section>
+    <h2>Data accessed</h2>
+    <p>Health Coach connects to Google Health to read the following data types from the owner's Fitbit device:</p>
+    <ul>
+      <li>Steps and daily activity</li>
+      <li>Sleep sessions and sleep stages</li>
+      <li>Heart rate measurements</li>
+      <li>Resting heart rate</li>
+      <li>Heart rate variability (HRV)</li>
+      <li>Body weight</li>
+      <li>Blood oxygen saturation (SpO₂)</li>
+      <li>Exercise sessions and heart rate zones</li>
+    </ul>
+    <p>
+      This data is accessed via the Google Health API using OAuth 2.0, with read-only permission scopes.
+      The application does not write any data back to Google Health.
+    </p>
+  </section>
+
+  <hr class="divider">
+
+  <section>
+    <h2>How data is stored</h2>
+    <p>
+      All data is stored locally in a SQLite database on the owner's private server. No data is
+      transmitted to, stored on, or processed by any third-party service, with the following exception:
+    </p>
+    <p>
+      A compact summary of recent health metrics (sleep hours, resting heart rate, steps, and recent
+      workout ratings) is sent to the Anthropic API to generate a daily coaching briefing and
+      adaptive workout plan. This summary contains no personally identifying information beyond
+      fitness metrics. Anthropic's data handling is governed by their
+      <a href="https://www.anthropic.com/legal/privacy" target="_blank" rel="noopener">privacy policy</a>.
+    </p>
+  </section>
+
+  <hr class="divider">
+
+  <section>
+    <h2>Data sharing</h2>
+    <p>
+      Health data is never sold, rented, shared with, or disclosed to any third party, advertiser,
+      analytics service, or other entity. The application has no analytics, no tracking pixels,
+      and no external scripts beyond Google Fonts.
+    </p>
+  </section>
+
+  <hr class="divider">
+
+  <section>
+    <h2>Data retention</h2>
+    <p>
+      Health data is cached locally for up to 5 minutes to reduce API calls. Historical data
+      (weight logs, workout check-ins, chat history) is retained indefinitely on the owner's
+      server and can be deleted at any time by the owner directly through the database.
+    </p>
+  </section>
+
+  <hr class="divider">
+
+  <section>
+    <h2>Access</h2>
+    <p>
+      The application is accessible only to its owner via password-protected session authentication.
+      There is no public registration or multi-user access.
+    </p>
+  </section>
+
+  <hr class="divider">
+
+  <section>
+    <h2>Contact</h2>
+    <p>
+      Questions about this privacy policy can be directed to
+      <a href="mailto:mail@mattparker.com">mail@mattparker.com</a>.
+    </p>
+  </section>
+</main>
+
+<footer>
+  <p>&copy; 2026 Health Coach &mdash; Personal use</p>
+  <p><a href="index.html">Home</a> &mdash; <a href="mailto:mail@mattparker.com">mail@mattparker.com</a></p>
+</footer>
+
+</body>
+</html>
